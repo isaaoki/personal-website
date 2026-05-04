@@ -1,0 +1,110 @@
+:root {
+    --primary-color: #1800ad;
+
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Roboto";
+}
+
+/* NAVBAR */
+#navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.nav-logo {
+    color: var(--primary-color);
+    padding: 10px 0px 0px 40px;
+}
+
+.nav-links {
+    list-style: none;
+
+    display: flex;
+    align-items: center;
+    gap: 36px;
+    padding: 10px 40px 0px 0px;
+}
+
+.nav-links li a {
+    color: var(--primary-color);
+    text-decoration: none;
+
+    padding: 5px 5px;
+}
+
+.nav-links li a:hover {
+    text-decoration: underline;
+}
+
+/* ME */
+#me {
+    margin: 100px 150px;
+}
+
+#me h1 {
+    font-size: 56px;
+}
+
+.buttons-me {
+    margin: 30px 0px;
+}
+
+.button-me {
+    background-color: var(--primary-color);
+    color: white;
+    font-size: 18px;
+    text-decoration: none;
+
+    border-radius: 10px;
+    padding: 7px 30px;
+    margin: 0px 10px 0 0;
+}
+
+/* ABOUT */
+.about-wrapper {
+    margin: 100px 200px;
+    position: relative;
+}
+
+.about-label {
+    position: absolute;
+    top: -14px;
+    left: 20px;
+    background: var(--primary-color);
+    color: white; /* ou a cor de fundo da página */
+    font-size: 13px;
+    font-weight: 500;
+    padding: 4px 14px;
+    border-radius: 8px;
+}
+
+#about {
+    padding: 28px 24px 24px;
+    border: 2px solid var(--primary-color);
+    border-radius: 10px;
+    display: flex;
+    align-items: flex-start;
+    gap: 24px;
+}
+
+.about-photo {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    object-fit: cover;
+}
+
+.about-photo img {
+    max-width: 100%;
+    height: auto;
+}
+
+#about p {
+    margin: 0;
+    line-height: 1.7;
+}

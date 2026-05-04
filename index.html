@@ -3,39 +3,50 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Isabela Aoki Website</title>
+  <title>Isabela Aoki - Website</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
   <link rel="stylesheet" href="assets/css/style.css" />
 </head>
 <body>
 
   <!-- ==================== NAVIGATION ==================== -->
-  <nav>
-    <span class="nav-logo"></span>
-    <ul>
-        <li><a href="#about">About</a></li>
-        <li><a href="#skills">Skills</a></li>
-        <li><a href="#projects">Projects</a></li>
-        <li><a href="#Experiences">Experiences</a></li>
-        <li><a href="#contact">Contact</a></li>
+  <nav id="navbar">
+    <span class="nav-logo">ISA</span>
+    <ul class="nav-links">
+        <li><a href="#about">ABOUT ME</a></li>
+        <li><a href="#skills">SKILLS</a></li>
+        <li><a href="#projects">PROJECTS</a></li>
+        <li><a href="#experiences">EXPERIENCES</a></li>
+        <li><a href="#contact">CONTACT</a></li>
     </ul>
   </nav>
 
   <!-- ==================== HERO ==================== -->
   <section id="me">
-    <h1>Isabela Aoki</h1>
-    <p>Computer Science Student - Data Science, ML and AI Enthusiast</p>
-    <a href="#projects">See my work</a>
+    <h1>Hi, I'm Isabela!</h1>
+    <p>I'm a Computer Science student at USP</p>
+    <div class="buttons-me">
+      <a href="#projects" class="button-me">Projects</a>
+      <a href="#contact" class="button-me">Contact</a>
+    </div>
   </section>
 
   <!-- ==================== ABOUT ==================== -->
-  <section id="about">
-    <h2>About Me</h2>
-    <p>
-      Hi! I'm Isabela, an undergraduate Computer Science student at IME - University of São Paulo (USP). I'm passionate about
-      Data Science, Machine Learning, and Artificial Intelligence. I love turning
-      data into meaningful insights and building intelligent and impactful systems.
-    </p>
-  </section>
+  <div class="about-wrapper">
+    <span class="about-label">ABOUT ME</span>
+    <section id="about">
+      <div class="about-photo">
+        <img src="./assets/images/about-photo.png" alt="Foto de perfil" />
+      </div>
+      <p>
+        Hi! I'm Isabela S. Aoki, an undergraduate Computer Science student at IME - University of São Paulo (USP). I'm passionate about Data Science, Machine Learning, and Artificial Intelligence. I love turning data into meaningful insights and building intelligent and impactful systems.
+      </p>
+    </section>
+  </div>
 
   <!-- ==================== SKILLS ==================== -->
   <section id="skills">
