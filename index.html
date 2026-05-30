@@ -7,7 +7,7 @@
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 
   <link rel="stylesheet" href="assets/css/style.css" />
 </head>
@@ -16,9 +16,9 @@
   <!-- ==================== NAVIGATION ==================== -->
   <nav id="navbar">
     <ul class="nav-links">
-        <li><a>Home</a></li>
-        <li><a href="#about">About</a></li>
-        <li><a href="#skills">Skills</a></li>
+        <li><a href="#section-me">Home</a></li>
+        <li><a href="#section-about">About</a></li>
+        <li><a href="#section-skills">Skills</a></li>
         <li><a href="#experiences">Experience</a></li>
         <li><a href="#projects">Projects</a></li>
         <li>
@@ -59,50 +59,101 @@
     </div>
   </section>
 
-  <!-- ==================== ABOUT ==================== -->
-  <div class="about-wrapper">
-    <span class="about-label">ABOUT ME</span>
-    <section id="about">
-      <div class="about-photo">
-        <img src="./assets/images/about-photo.png" alt="Foto de perfil" />
-      </div>
+  <!-- ==================== SECTION ABOUT ==================== -->
+  <section id="section-about">
+    <h2>About me.</h2>
+    <div class="about-description">
+      <img id="about-picture" src="./assets/images/about-photo.jpg" alt="Foto de perfil"/>
       <p>
         Hi! I'm Isabela S. Aoki, an undergraduate Computer Science student at IME - University of São Paulo (USP). I'm passionate about Data Science, Machine Learning, and Artificial Intelligence. I love turning data into meaningful insights and building intelligent and impactful systems.
       </p>
-    </section>
-  </div>
+    </div>
+  </section>
 
-  <!-- ==================== SKILLS ==================== -->
-  <section id="skills">
-    <h2>Skills</h2>
+  <!-- ==================== SECTION SKILLS ==================== -->
+  <section id="section-skills">
+    <h2>Skills.</h2>
+    <h3>Languages</h3>
     <ul>
-      <li>Python</li>
-      <li>Java, Java Spring</li>
-      <li>Power BI</li>
+      <li>
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/python/python-original.svg"/>
+        <span>Python</span>
+      </li>
+      <li>
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/c/c-original.svg" />
+        <span>C</span>
+      </li>
+      <li>
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/cplusplus/cplusplus-original.svg" />
+        <span>C++</span>
+      </li>
+      <li>
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/java/java-original.svg" />
+        <span>Java</span>
+      </li>
+      <li>
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/sqldeveloper/sqldeveloper-original.svg" />
+        <span>SQL</span>
+      </li>
+      <li>
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original.svg" />
+        <span>HTML</span>
+      </li>
+      <li>
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-original.svg" />
+        <span>CSS</span>
+      </li>
+    </ul>
+    <h3>Frameworks & Libraries</h3>
+    <ul>
+      <li>
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/spring/spring-original.svg" />
+        <span>Java Spring</span>
+      </li>
+      <li>
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/scikitlearn/scikitlearn-original.svg" />
+        <span>Scikit-learn</span>
+      </li>
+      <li>
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/pandas/pandas-original.svg" />
+        <span>Pandas</span>
+      </li>
+      <li>
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/numpy/numpy-original.svg" />
+        <span>Numpy</span>
+      </li>
+    </ul>
+    <h3>Tools</h3>
+    <ul>
+      <li>
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/postgresql/postgresql-original.svg" />
+        <span>PostgreSQL</span>
+      </li>
+      <li>
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/docker/docker-plain.svg" />
+        <span>Docker</span>
+      </li>
+      <li>
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/git/git-original.svg" />
+        <span>Git</span>
+      </li>
     </ul>
   </section>
 
-  <!-- ==================== PROJECTS ==================== -->
+  <!-- ==================== SECTION EXPERIENCES ==================== -->
+  <section id="experience">
+    
+  </section>
+
+  <!-- ==================== SECTION PROJECTS ==================== -->
   <section id="projects">
     <h2>Projects</h2>
 
     <div class="project-card">
       <h3>Project Name <span class="badge">in progress</span></h3>
       <p>Short description of what this project does and what technologies you used.</p>
-      <a href="#">GitHub →</a>
     </div>
 
-  </section>
-
-  <!-- ==================== CONTACT ==================== -->
-  <section id="contact">
-    <h2>Get in Touch</h2>
-    <p>I'm open to opportunities, collaborations, and conversations.</p>
-    <ul>
-      <li><a href="mailto:isabaoki@gmail.com">isabaoki@gmail.com</a></li>
-      <li><a href="https://github.com/isaaoki" target="_blank">GitHub</a></li>
-      <li><a href="https://linkedin.com/in/isabela-aoki" target="_blank">LinkedIn</a></li>
-    </ul>
   </section>
 
   <!-- ==================== FOOTER ==================== -->
