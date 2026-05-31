@@ -11,12 +11,12 @@
 
   <link rel="stylesheet" href="assets/css/style.css" />
 </head>
-<body>
+<body id="home">
 
   <!-- ==================== NAVIGATION ==================== -->
   <nav id="navbar">
     <ul class="nav-links">
-        <li><a href="#section-me">Home</a></li>
+        <li><a href="#">Home</a></li>
         <li><a href="#section-about">About</a></li>
         <li><a href="#section-skills">Skills</a></li>
         <li><a href="#section-experiences">Experiences</a></li>
@@ -36,8 +36,8 @@
 
   <!-- ==================== SECTION ME ==================== -->
   <section id="section-me">
-    <h1>Hi, I'm Isabela!</h1> 
-    <p>I'm a Computer Science student at USP, exploring Machine Learning, Artificial Intelligence and backend development.</p>
+    <h1 id="typing-text"></h1>
+    <p>I'm a computer Science student at USP, exploring Machine Learning, Artificial Intelligence, and Backend Development.</p>
     <div class="me-links">
       <a href="https://github.com/isaaoki" target="_blank" class="me-buttons">
         <svg fill="currentColor" width="25" height="25" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M12.026 2c-5.509 0-9.974 4.465-9.974 9.974 0 4.406 2.857 8.145 6.821 9.465.499.09.679-.217.679-.481 0-.237-.008-.865-.011-1.696-2.775.602-3.361-1.338-3.361-1.338-.452-1.152-1.107-1.459-1.107-1.459-.905-.619.069-.605.069-.605 1.002.07 1.527 1.028 1.527 1.028.89 1.524 2.336 1.084 2.902.829.091-.645.351-1.085.635-1.334-2.214-.251-4.542-1.107-4.542-4.93 0-1.087.389-1.979 1.024-2.675-.101-.253-.446-1.268.099-2.64 0 0 .837-.269 2.742 1.021a9.582 9.582 0 0 1 2.496-.336 9.554 9.554 0 0 1 2.496.336c1.906-1.291 2.742-1.021 2.742-1.021.545 1.372.203 2.387.099 2.64.64.696 1.024 1.587 1.024 2.675 0 3.833-2.33 4.675-4.552 4.922.355.308.675.916.675 1.846 0 1.334-.012 2.41-.012 2.737 0 .267.178.577.687.479C19.146 20.115 22 16.379 22 11.974 22 6.465 17.535 2 12.026 2z"/></svg>
@@ -65,7 +65,9 @@
     <div class="about-description">
       <img id="about-picture" src="./assets/images/about-photo.jpg" alt="Foto de perfil"/>
       <p>
-        Hi! I'm Isabela S. Aoki, an undergraduate Computer Science student at IME - University of São Paulo (USP). I'm passionate about Data Science, Machine Learning, and Artificial Intelligence. I love turning data into meaningful insights and building intelligent and impactful systems.
+        Hi! I'm Isabela S. Aoki, a Computer Science undergraduate at the IME - University of São Paulo (USP), passionate about how data, machine learning, and artificial intelligence can transform information into meaningful insights.
+        Throughout my academic journey, I have explored different areas of development, like frontend, backend, and mobile, which gave me a broad perspective on technology. More recently, I have been focusing on data science and AI, combining my enthusiasm for mathematics and computer science. I have experience with Python (NumPy, Matplotlib), SQL, and R, strengthened by the Google Data Analytics certification.
+        I am currently seeking an internship in data science, machine learning, or AI where I can apply my skills, keep learning, and contribute to impactful projects.
       </p>
     </div>
   </section>
@@ -149,7 +151,7 @@
         <div class="timeline-card">
           <h3>BSc. Computer Science at IME-USP</h3>
           <small>2024 – Current</small>
-          <p>I started at FFCLRP-USP and in 2026 transferred to the Institute of Mathematics, Statistics and Computer Science (IME-USP) in São Paulo.</p>
+          <p>I began my degree at FFCLRP-USP and transferred in 2026 to the Institute of Mathematics, Statistics and Computer Science (IME-USP) in São Paulo. I'm currently following the specialization in Machine Learning and Artificial Intelligence in my degree.</p>
         </div>
         <div class="timeline-icon">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
@@ -170,9 +172,9 @@
         </div>
 
         <div class="timeline-card">
-          <h3>Undergraduate Research at InReDD</h3>
+          <h3>Undergraduate Researcher at InReDD</h3>
           <small>2025 - Current</small>
-          <p>I help dentists and computer scientists bridge the gap between odonthology and computational systems in the research group <a href="https://inredd.com.br/pt-BR" target="_blank">InReDD</a>. Currently, I help in the backend development, using Java Spring, and make changes in the architecture, like building a pipeline to translate user fields using Ollama, RabbitMQ and Python.</p>
+          <p>I help bridge the gap between odontology and computational systems at the <a href="https://inredd.com.br/pt-BR" target="_blank">InReDD</a> research group. My work focuses on backend development with Java Spring and architectural improvements, including building a pipeline for translating user fields using Ollama, RabbitMQ, and Python.</p>
         </div>
       </div>
 
@@ -180,7 +182,7 @@
         <div class="timeline-card">
           <h3>Mobile Developer Volunteer at SofiaFala</h3>
           <small>2025</small>
-          <p>I helped on the development of a mobile application for collecting and processing audio from people with speech disabilities, called <a href="https://sites.usp.br/sofiafala/" target="_blank">SofiaFala</a>. Building features, using Flutter and Dart, and integrating with Firebase. Collaborated with a 6-member team using agile methodologies to implement and review features.</p>
+          <p>Contributed to the development of a mobile application, called <a href="https://sites.usp.br/sofiafala/" target="_blank">SofiaFala</a>, for collecting and processing audio from people with speech disabilities. Built features using Flutter and Dart, integrated Firebase, and collaborated with a 6-member team following agile methodologies.</p>
         </div>
         
         <div class="timeline-icon">
@@ -219,15 +221,15 @@
       <div class="project-card">
         <img src="assets/images/beedata.png" alt="">
         <div class="project-content"> 
-          <h3>ML Model for Classification of CKD</h3>
+          <h3>ML Model for Chronic Kidney Disease Classification</h3>
           <div class="project-actions">
-            <span class="project-badge">Finished</span>
+            <span class="project-badge finished">Finished</span>
             <a href="https://github.com/isaaoki" target="_blank" class="project-link">
               <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-external-link w-4 h-4"><path d="M15 3h6v6"></path><path d="M10 14 21 3"></path><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path></svg>
               <span>Link</span>
             </a>
           </div>
-          <p>Project to analyze, clean and train a classification algorithm that identify the presence of chronic kidney disease (CKD) in a patient, based on its prontuary.</p>
+          <p>A project to analyze, clean, and train a classification model that identifies the presence of chronic kidney disease (CKD) in patients based on their medical records.</p>
           <div class="project-technologies">
             <ul>
               <li>Python</li>
@@ -245,7 +247,7 @@
         <div class="project-content"> 
           <h3>ML Model for Classification of CKD</h3>
           <div class="project-actions">
-            <span class="project-badge">Finished</span>
+            <span class="project-badge in-progress">Finished</span>
             <a href="https://github.com/isaaoki" target="_blank" class="project-link">
               <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-external-link w-4 h-4"><path d="M15 3h6v6"></path><path d="M10 14 21 3"></path><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path></svg>
               <span>Link</span>
