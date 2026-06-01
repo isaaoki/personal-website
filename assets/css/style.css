@@ -90,6 +90,10 @@ body {
     padding-top: 280px;
 }
 
+#section-me p {
+    text-align: center;
+}
+
 #typing-text {
     font-size: 56px;
     border-right: 5px solid var(--color-black);
@@ -139,11 +143,29 @@ body {
 .about-description {
     display: flex;
     gap: 50px;
+    text-align: justify;
 }
 
-.about-description img {
+.about-picture {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+}
+
+.about-picture img {
     height: 200px;
     border-radius: 40px;
+    transition: transform 0.3s ease;
+}
+
+.about-picture img:nth-child(1):hover {
+    transform: scale(1.05) rotate(10deg);
+}
+
+.about-picture img:nth-child(2):hover {
+    transform: scale(1.05) rotate(-10deg);
 }
 
 .about-description p {
@@ -241,7 +263,7 @@ body {
 }
 
 .timeline-card:hover {
-    transform: scale(1.01);
+    transform: scale(1.1);
 }
 
 .timeline-card h3 {
@@ -328,7 +350,7 @@ body {
 }
 
 .project-card:hover {
-    transform: scale(1.01);
+    transform: scale(1.05);
 }
 
 .project-actions {
