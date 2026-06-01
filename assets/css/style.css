@@ -20,6 +20,7 @@ body {
     margin: 0;
     padding: 0;
     font-family: "Outfit";
+    color: var(--color-black);
 }
 
 /* ===== NAVIGATION BAR ===== */
@@ -80,6 +81,14 @@ body {
     color: var(--color-secondary);
 }
 
+.icon-moon { 
+    display: none;
+}
+
+.icon-sun {
+    color: var(--color-black);
+}
+
 /* ===== SECTION: ME ===== */
 #section-me {
     display: flex;
@@ -105,8 +114,12 @@ body {
 
 /* Make the cursor flash */
 @keyframes blink {
-  from, to { border-color: transparent }
-  50% { border-color: black; }
+    from, to { 
+        border-color: transparent 
+    }
+    50% { 
+        border-color: var(--color-black); 
+    }
 }
 
 .me-links {
@@ -189,6 +202,7 @@ body {
     display: flex;
     flex-wrap: wrap;
     gap: 12px;
+    padding-left: 0px;
 }
 
 #section-skills ul li {
@@ -211,7 +225,7 @@ body {
 
 /* ===== SECTION: EXPERIENCES =====*/
 #section-experiences {
-    background-color: whitesmoke;
+    background-color: var(--color-white2);
     padding: 40px 150px 80px 150px;
 }
 
@@ -234,7 +248,7 @@ body {
     transform: translateX(-50%);
     width: 3px;
     height: 100%;
-    background-color: var(--color-primary);
+    background-color: var(--color-secondary);
 }
 
 .timeline-entry {
@@ -294,7 +308,7 @@ body {
     width: 48px;
     height: 48px;
     border-radius: 50%;
-    background-color: var(--color-primary);
+    background-color: var(--color-secondary);
     color: var(--color-white);
     display: flex;
     align-items: center;
@@ -394,6 +408,7 @@ body {
     font-size: 12px;
     list-style: none;
     background: var(--color-secondary);
+    color: var(--color-white);
     transition: color 0.3s;
     border-radius: 16px;
     padding: 5px 10px;
@@ -419,4 +434,247 @@ body {
 
 #section-footer p {
     font-size: 12px;
+}
+
+/* ===== HAMBURGER NAVBAR ===== */
+.nav-hamburger {
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 4px;
+    z-index: 200;
+}
+ 
+.nav-hamburger span {
+    display: block;
+    width: 22px;
+    height: 2px;
+    background-color: var(--color-black);
+    border-radius: 2px;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+}
+ 
+.nav-hamburger.open span:nth-child(1) {
+    transform: translateY(7px) rotate(45deg);
+}
+.nav-hamburger.open span:nth-child(2) {
+    opacity: 0;
+}
+.nav-hamburger.open span:nth-child(3) {
+    transform: translateY(-7px) rotate(-45deg);
+}
+
+/* ===== MODO ESCURO ====== */
+body.dark {
+    --color-primary: #67baf4;
+    --color-secondary: #a8d8f8;
+    --color-tertiary: #1e3a52;
+    --color-black: #e8e8e8;
+    --color-white: #0f1923;
+    --color-white2: #152231;
+    --color-grey: rgb(197, 197, 197);
+    --color-navbar: rgba(15, 25, 35, 0.80);
+    --color-box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+    --color-finished-badge: rgba(0, 255, 0, 0.15);
+}
+
+body.dark .icon-sun { 
+    display: none; 
+}
+body.dark .icon-moon { 
+    display: flex;
+    color: var(--color-black)
+}
+
+
+/* ===== RESPONSIVE: TABLET (≤ 900px) ===== */
+@media (max-width: 900px) {
+    #section-me {
+        padding: 180px 40px 120px 40px;
+    }
+ 
+    #section-about {
+        padding: 40px 40px 60px 40px;
+    }
+ 
+    .about-description {
+        flex-direction: column;
+        align-items: center;
+        gap: 30px;
+    }
+ 
+    .about-picture {
+        flex-direction: row;
+    }
+ 
+    .about-picture img {
+        height: 160px;
+    }
+ 
+    .about-description p {
+        max-width: 100%;
+    }
+ 
+    #section-skills {
+        padding: 40px 40px 60px 40px;
+    }
+ 
+    #section-experiences {
+        padding: 40px 40px 60px 40px;
+    }
+ 
+    .timeline-card {
+        width: calc(50% - 40px);
+    }
+ 
+    #section-projects {
+        padding: 40px 0 60px 0;
+    }
+ 
+    .project-grid {
+        margin: 0 40px;
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+ 
+/* ===== RESPONSIVE: MOBILE (≤ 600px) ===== */
+@media (max-width: 600px) {
+    /* Navbar: pill becomes full-width bar with hamburger */
+    #navbar {
+        width: calc(100% - 100px);
+        border-radius: 16px;
+        padding: 12px 20px;
+        justify-content: flex-end;
+        top: 10px;
+    }
+ 
+    .nav-hamburger {
+        display: flex;
+    }
+ 
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        align-items: center;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 80vh;
+        background-color: var(--color-white2);
+        backdrop-filter: blur(16px);
+        border-radius: 16px;
+        
+        -webkit-backdrop-filter: blur(16px);
+        justify-content: center;
+        gap: 28px;
+        z-index: 150;
+    }
+ 
+    .nav-links.open {
+        display: flex;
+    }
+ 
+    .nav-links li a {
+        font-size: 20px;
+    }
+ 
+    /* Hero section */
+    #section-me {
+        padding: 140px 24px 100px 24px;
+    }
+ 
+    #typing-text {
+        font-size: 36px;
+        min-height: 50px;
+    }
+ 
+    #section-me p {
+        font-size: 15px;
+    }
+ 
+    /* About */
+    #section-about {
+        padding: 40px 24px 60px 24px;
+    }
+ 
+    #section-about h2 {
+        font-size: 32px;
+    }
+ 
+    .about-picture {
+        flex-direction: column;
+        align-items: center;
+    }
+ 
+    .about-picture img {
+        height: 170px;
+    }
+ 
+    /* Skills */
+    #section-skills {
+        padding: 40px 24px 60px 24px;
+    }
+ 
+    #section-skills h2 {
+        font-size: 32px;
+    }
+ 
+    #section-skills ul {
+        justify-content: center;
+    }
+
+    /* Experiences */
+    #section-experiences {
+        padding: 40px 24px 60px 24px;
+    }
+ 
+    #section-experiences h2 {
+        font-size: 32px;
+    }
+ 
+    /* Timeline: single column */
+    .timeline::before {
+        display: none;
+    }
+ 
+    .timeline-entry.left,
+    .timeline-entry.right {
+        flex-direction: row;
+        align-items: flex-start;
+    }
+ 
+    .timeline-spacer {
+        display: none;
+    }
+ 
+    .timeline-icon {
+        flex-shrink: 0;
+        margin: 0 12px 0 0;
+        width: 40px;
+        height: 40px;
+    }
+ 
+    .timeline-card {
+        width: 100%;
+    }
+ 
+    /* Projects */
+    #section-projects {
+        padding: 40px 0 60px 0;
+    }
+ 
+    #section-projects h2 {
+        font-size: 32px;
+    }
+ 
+    .project-grid {
+        grid-template-columns: 1fr;
+        margin: 0 24px;
+    }
 }
