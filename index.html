@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -19,11 +19,12 @@
       <span></span><span></span><span></span>
     </button>
     <ul class="nav-links" id="nav-links">
-        <li><a href="#">Home</a></li>
-        <li><a href="#section-about">About</a></li>
-        <li><a href="#section-skills">Skills</a></li>
-        <li><a href="#section-experiences">Experiences</a></li>
-        <li><a href="#section-projects">Projects</a></li>
+        <li><a href="#" data-i18n="nav-home">Home</a></li>
+        <li><a href="#section-about" data-i18n="nav-about">About</a></li>
+        <li><a href="#section-skills" data-i18n="nav-skills">Skills</a></li>
+        <li><a href="#section-experiences" data-i18n="nav-experiences">Experiences</a></li>
+        <li><a href="#section-projects" data-i18n="nav-projects">Projects</a></li>
+        <li><button id="nav-lang-btn"></button></li>
         <li>
           <button class="nav-theme-btn">
             <span class="icon-sun" aria-hidden="true">
@@ -41,10 +42,8 @@
 
   <!-- ==================== SECTION ME ==================== -->
   <section id="section-me">
-    <h1 id="typing-text"></h1>
-    <p>I'm a Computer Science student at University of São Paulo (USP), exploring Data Science, Machine Learning and Back-end Development in my graduation.
-      <br><br>
-      I'm passionate about turning ideas into meaningful, real-world solutions.
+    <h1 id="typing-text" data-i18n="typing-text"></h1>
+    <p data-i18n="me-section">I'm a Computer Science student at University of São Paulo (USP), who believes the <b>best tech is built with people in mind</b>.<br>I'm passionate about Data Science, Machine Learning and Back-end Development, not just for the craft, <br>but because they let me turn curious questions into real solutions that make a difference in people's lives!
     </p>
     <div class="me-links">
       <a href="https://github.com/isaaoki" target="_blank" class="me-buttons">
@@ -69,30 +68,22 @@
 
   <!-- ==================== SECTION ABOUT ==================== -->
   <section id="section-about">
-    <h2>About me.</h2>
+    <h2 data-i18n="about-title">About me.</h2>
     <div class="about-description">
       <div class="about-picture">
         <img src="./assets/images/about-photo.jpg" alt="Profile picture of Isabela, with brown hair, and brown eyes"/>
         <img src="./assets/images/about-photo2.jpg" alt="Picture of Isabela presenting at SIICUSP, with her poster by her side"/>
       </div>
-      <p>
-        Hi! I'm Isabela Suemi Aoki, a Computer Science undergraduate student at IME - University of São Paulo (USP). I'm passionate about how data and technology can transform information into real impact, whether that's through machine learning models, data-driven insights or a well-crafted software.
-        <br><br>
-        Throughout my degree, I have explored a wide range of  areas, like front-end, back-end, and mobile development, which gave me a solid and broad perspective in how software is built from end to end. 
-        <br><br>
-        More recently, I've been focusing on Data Science, Machine Learning, where my love and curiosity for math, statistics and CS really come together. I work with Python (NumPy, Pandas, Matplotlib), SQL, and R, and I've strengthened that foundation with the Google Data Analytics certification.
-        <br><br>
-        I'm also deeply interested in Software Engineering and Back-end development with Java Spring Boot, which is the focus of my undergraduate research at InReDD, where I get to work on solutions that go beyond the classroom.
-        <br><br> 
-        I'm currently looking for an internship in Data Science, Machine Learning, or Software Engineering where I can keep learning, collaborate with great people, and contribute to projects that matter.
+      <p data-i18n="about-section">
+        Hi! I'm Isabela Suemi Aoki, a Computer Science undergraduate at IME - University of São Paulo (USP). I'm passionate about how data and technology can transform information into real impact, whether that's through machine learning models, data-driven insights or a well-crafted software.<br><br>Throughout my degree, I have explored a wide range of  areas, like front-end, back-end, and mobile development, which gave me a solid and broad perspective on how software is built from end to end.<br><br>More recently, I've been focusing on Data Science, Machine Learning, where my love and curiosity for math, statistics and CS really come together. I work with Python (NumPy, Pandas, Matplotlib), SQL, and R, and I've strengthened that foundation with the Google Data Analytics certification.<br><br>I'm also deeply interested in Software Engineering and Back-end development with Java Spring Boot, which is the focus of my undergraduate research at InReDD, where I get to work on solutions that go beyond the classroom.<br><br>In the <b>MAC0102 course</b>, I learned about different areas of specialization where I get to shape my own path through electives. I'm focusing on Data Science and Machine Learning, since it's one of my interests and something I'm very curious and eager to learn. I also plan to take electives from the Software Systems and Artificial Intelligence tracks, where I can keep up with these fast-growing fields. The Theory of Computation track also seemed interesting to me, and I intend to take some optimization elective.<br><br>My plans for the rest of my college years include dedicating myself to my coursework, completing my research grant (offered by PUB-USP), and exploring different extension groups. I'm also actively seeking an internship in Data Science, ML, or Software Engineering where I can apply what I've learned and keep growing.
       </p>
     </div>
   </section>
 
   <!-- ==================== SECTION SKILLS ==================== -->
   <section id="section-skills">
-    <h2>Skills.</h2>
-    <h3>Languages</h3>
+    <h2 data-i18n="skills-title">Skills.</h2>
+    <h3 data-i18n="skills-languages">Languages</h3>
     <ul>
       <li>
         <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/python/python-original.svg"/>
@@ -123,7 +114,7 @@
         <span>CSS</span>
       </li>
     </ul>
-    <h3>Frameworks & Libraries</h3>
+    <h3 data-i18n="skills-frameworks">Frameworks & Libraries</h3>
     <ul>
       <li>
         <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/spring/spring-original.svg" />
@@ -142,7 +133,7 @@
         <span>Numpy</span>
       </li>
     </ul>
-    <h3>Tools</h3>
+    <h3 data-i18n="skills-tools">Tools</h3>
     <ul>
       <li>
         <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/git/git-original.svg" />
@@ -161,14 +152,14 @@
 
   <!-- ==================== SECTION EXPERIENCES ==================== -->
   <section id="section-experiences">
-    <h2>Education & Experiences.</h2>
+    <h2 data-i18n="experiences-title">Education & Experiences.</h2>
 
     <div class="timeline">
       <div class="timeline-entry left">
         <div class="timeline-card">
-          <h3>BSc. Computer Science at IME-USP</h3>
-          <small>2024 – Current</small>
-          <p>I started my degree at my dream university in São Paulo! I studied at FFCLRP-USP and transferred in 2026 to Institute of Mathematics, Statistics and Computer Science (IME-USP), one of Brazil's top CS institutions. Currently following the Machine Learning & Artificial Intelligence specialization track.</p>
+          <h3 data-i18n="experiences1-title">BSc. Computer Science at IME-USP</h3>
+          <small data-i18n="experiences1-duration">2024 – Current</small>
+          <p data-i18n="experiences1-desc">I started my degree at my dream university in São Paulo! I studied at FFCLRP-USP and transferred in 2026 to Institute of Mathematics, Statistics and Computer Science (IME-USP), one of Brazil's top CS institutions. Currently following the Data Science and Machine Learning specialization track.</p>
         </div>
         <div class="timeline-icon">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
@@ -189,17 +180,17 @@
         </div>
 
         <div class="timeline-card">
-          <h3>Undergraduate Researcher at InReDD</h3>
-          <small>2025 - Current</small>
-          <p>Bridging odontology and technology through back-end development with Java Spring at <a href="https://inredd.com.br/pt-BR" target="_blank">InReDD</a>. Recently built a translation pipeline using Ollama, RabbitMQ, and Python to improve the system's usability and reach.</p>
+          <h3 data-i18n="experiences2-title">Undergraduate Researcher at InReDD</h3>
+          <small data-i18n="experiences2-duration">2025 - Current</small>
+          <p data-i18n="experiences2-desc">Bridging odontology and technology through back-end development with Java Spring at <a href="https://inredd.com.br/pt-BR" target="_blank">InReDD</a>, with a research grant by PUB-USP. Recently built a translation pipeline using Ollama, RabbitMQ, and Python to improve the system's usability and reach.</p>
         </div>
       </div>
 
       <div class="timeline-entry left">
         <div class="timeline-card">
-          <h3>Mobile Developer Volunteer at SofiaFala</h3>
-          <small>2025</small>
-          <p>Volunteered and helped build a Flutter + Dart mobile app for collecting audio and video from people with speech disabilities, called <a href="https://sites.usp.br/sofiafala/" target="_blank">SofiaFala</a>. Integrated Firebase and collaborated with a 6-member agile team on a project with real social impact.</p>
+          <h3 data-i18n="experiences3-title">Mobile Developer Volunteer at SofiaFala</h3>
+          <small data-i18n="experiences3-duration">2025</small>
+          <p data-i18n="experiences3-desc">Volunteered and helped build a Flutter + Dart mobile app for collecting audio and video from people with speech disabilities, called <a href="https://sites.usp.br/sofiafala/" target="_blank">SofiaFala</a>. Integrated Firebase and collaborated with a 6-member agile team on a project with real social impact.</p>
         </div>
         
         <div class="timeline-icon">
@@ -232,21 +223,21 @@
 
   <!-- ==================== SECTION PROJECTS ==================== -->
   <section id="section-projects">
-    <h2>Projects.</h2>
+    <h2 data-i18n="projects-title">Projects.</h2>
 
     <div class="project-grid">
       <div class="project-card">
         <img src="assets/images/beedata.png" alt="">
         <div class="project-content"> 
-          <h3>ML Model for Chronic Kidney Disease Classification</h3>
+          <h3 data-i18n="projects1-title">ML Model for Chronic Kidney Disease Classification</h3>
           <div class="project-actions">
-            <span class="project-badge finished">Finished</span>
+            <span class="project-badge finished" data-i18n="projects1-status">Finished</span>
             <a href="https://github.com/isaaoki" target="_blank" class="project-link">
               <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-external-link w-4 h-4"><path d="M15 3h6v6"></path><path d="M10 14 21 3"></path><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path></svg>
               <span>Link</span>
             </a>
           </div>
-          <p>A end-to-end machine learning project focused on predicting chronic kidney disease (CKD) from real patient medical records. Covered the full pipeline, from exploratory data analysis (EDA) and data cleaning to training and evaluating classification models. A great exercise in applying ML to a problem with real healthcare impact.</p>
+          <p data-i18n="projects1-desc">A end-to-end machine learning project focused on predicting chronic kidney disease (CKD) from real patient medical records. Covered the full pipeline, from exploratory data analysis (EDA) and data cleaning to training and evaluating classification models. A great exercise in applying ML to a problem with real healthcare impact.</p>
           <div class="project-technologies">
             <ul>
               <li>Python</li>
@@ -262,15 +253,15 @@
       <div class="project-card">
         <img src="assets/images/website.png" alt="">
         <div class="project-content"> 
-          <h3>Personal Website</h3>
+          <h3 data-i18n="projects2-title">Personal Website</h3>
           <div class="project-actions">
-            <span class="project-badge finished">Finished</span>
+            <span class="project-badge finished" data-i18n="projects2-status">Finished</span>
             <a href="https://github.com/isaaoki/personal-website" target="_blank" class="project-link">
               <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-external-link w-4 h-4"><path d="M15 3h6v6"></path><path d="M10 14 21 3"></path><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path></svg>
               <span>Link</span>
             </a>
           </div>
-          <p>Designed and built from scratch as part of a university course, and became something I'm genuinely proud of! Focused on keeping it clean, minimalist, and easy to navigate, so it works as a quick but meaningful introduction to who I am. Built with HTML, CSS, and JavaScript, with every design decision made by me.</p>
+          <p data-i18n="projects2-desc">Designed and built from scratch as part of a university course, and became something I'm genuinely proud of! Focused on keeping it clean, minimalist, and easy to navigate, so it works as a quick but meaningful introduction to who I am. Built with HTML, CSS, and JavaScript, with every design decision made by me.</p>
           <div class="project-technologies">
             <ul>
               <li>HTML</li>
