@@ -20,21 +20,16 @@ A personal portfolio website developed for the **MAC0102** course. The website s
 
 ## 🚀 Live Demo
 
-Add your GitHub Pages link here:
-
 ```text
 https://isaaoki.github.io/personal-website
 ```
 
 ## 📸 Screenshots
 
-You can add screenshots here.
-
 ### Home Page
 
-```md
 ![Home Page](assets/images/website.png)
-```
+
 
 ## 🛠️ Technologies Used
 
@@ -75,7 +70,7 @@ Alternatively, you can use a local server extension such as Live Server in VS Co
 
 ## 🎓 Academic Context
 
-This project was developed as part of the **MAC0102** course and was designed to apply concepts related to web development, user interface design, and responsive layouts, as well, explain the path I intend to follow in my college years. 
+This project was developed as part of the **MAC0102** course and was designed to apply concepts related to web development, user interface design, and responsive layouts — as well as document the path I intend to follow during my college years.
 
 ## 🙏 Credits
 
